@@ -1,0 +1,22 @@
+{
+  "n_train": 1500,
+  "n_calibration": 500,
+  "n_test": 4000,
+  "rmse_mhz": 27.748800904669476,
+  "nrmse_pct_of_range": 3.889110147816324,
+  "mae_mhz": 22.047769505370166,
+  "r2": 0.9289201523279169,
+  "sigma_calibration_mhz": 26.374327822159437,
+  "window_coverage_k1.5": 0.85225,
+  "conformal_90_halfwidth_mhz": 42.32287661053337,
+  "conformal_90_coverage": 0.8785,
+  "ood_fallback_rate": 0.001
+}
+                       Method  Mean tests  p95 tests  Time (ms)  Saving vs binary (%)  Saving vs linear (%)  |error| (MHz)  Under-bin (%)  Over-bin escapes  Fallback (%)
+                 Linear sweep       40.48         58     1214.4                -526.3                   0.0            5.8            9.6                 0           0.0
+                Binary search        6.46          7      193.9                   0.0                  84.0            5.8            9.0                 1           0.0
+  Bayesian (population prior)        6.44          8      193.1                   0.4                  84.1            6.5           11.8                 0           0.0
+               ML-seeded walk        5.32         10      159.7                  17.7                  86.9            5.8            9.4                 0           0.1
+           ML-windowed binary        3.98          9      119.3                  38.5                  90.2            5.7            9.8                 0           0.1
+                ML + Bayesian        4.27          6      128.1                  33.9                  89.4            6.8           13.1                 1           0.1
+ML confirm-bin (binning only)        1.79          2       53.8                  72.3                  95.6            NaN           11.3                 2           0.1

@@ -1,0 +1,8 @@
+Method,Mean tests,p95 tests,Time (ms),Saving vs binary (%),Saving vs linear (%),|error| (MHz),Under-bin (%),Over-bin escapes,Fallback (%)
+Linear sweep,40.48,58,1214.4,-526.3,0.0,5.8,9.6,0,0.0
+Binary search,6.46,7,193.9,0.0,84.0,5.8,9.0,1,0.0
+Bayesian (population prior),6.44,8,193.1,0.4,84.1,6.5,11.8,0,0.0
+ML-seeded walk,5.32,10,159.7,17.7,86.9,5.8,9.4,0,0.1
+ML-windowed binary,3.98,9,119.3,38.5,90.2,5.7,9.8,0,0.1
+ML + Bayesian,4.27,6,128.1,33.9,89.4,6.8,13.1,1,0.1
+ML confirm-bin (binning only),1.79,2,53.8,72.3,95.6,,11.3,2,0.1

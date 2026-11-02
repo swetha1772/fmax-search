@@ -1,0 +1,14 @@
+{
+  "n_train": 1500,
+  "n_calibration": 500,
+  "n_test": 4000,
+  "rmse_mhz": 27.748800904669476,
+  "nrmse_pct_of_range": 3.889110147816324,
+  "mae_mhz": 22.047769505370166,
+  "r2": 0.9289201523279169,
+  "sigma_calibration_mhz": 26.374327822159437,
+  "window_coverage_k1.5": 0.85225,
+  "conformal_90_halfwidth_mhz": 42.32287661053337,
+  "conformal_90_coverage": 0.8785,
+  "ood_fallback_rate": 0.001
+}
